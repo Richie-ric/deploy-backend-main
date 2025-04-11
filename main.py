@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DATABASE_URL = "postgresql://postgres:123456@host.docker.internal:5432/postgres"
+DATABASE_URL = "postgresql://postgres:123456@my-postgres:5432/postgres"
 
 # SQLAlchemy setup
 engine = create_engine(DATABASE_URL)
